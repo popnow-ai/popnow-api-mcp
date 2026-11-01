@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "popnow-api": {
+      "command": "npx",
+      "args": ["-y", "@popnow/mcp"],
+      "env": { "POPNOW_API_KEY": "sk-popnow-..." }
+    }
+  }
+}

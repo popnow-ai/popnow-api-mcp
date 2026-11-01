@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "popnow-api": {
+      "type": "http",
+      "url": "https://api.popnow.ai/api/v1/mcp",
+      "headers": { "Authorization": "Bearer ${POPNOW_API_KEY}" }
+    }
+  }
+}

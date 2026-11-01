@@ -1,0 +1,3 @@
+[mcp_servers.popnow-api]
+url = "https://api.popnow.ai/api/v1/mcp"
+bearer_token_env_var = "POPNOW_API_KEY"

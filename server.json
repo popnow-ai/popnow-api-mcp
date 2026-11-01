@@ -1,0 +1,61 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.popnow-ai/popnow-api-mcp",
+  "title": "PopNow API",
+  "description": "Developer MCP for PopNow: run any AI image, video and audio model with an API key, billed in USD.",
+  "websiteUrl": "https://popnow.ai/api/mcp",
+  "icons": [
+    {
+      "src": "https://popnow.ai/brand/popnow-logo.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "256x256"
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/popnow-ai/popnow-api-mcp",
+    "source": "github"
+  },
+  "version": "0.2.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.popnow.ai/api/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Required. 'Bearer sk-popnow-...' API key from https://popnow.ai/api/console/keys. Billed in USD from your PopNow API balance.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@popnow/mcp",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POPNOW_API_KEY",
+          "description": "PopNow API key (sk-popnow-...) from https://popnow.ai/api/console/keys",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "POPNOW_MCP_URL",
+          "description": "Override the remote endpoint (default https://api.popnow.ai/api/v1/mcp)",
+          "isRequired": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

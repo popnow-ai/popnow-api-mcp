@@ -1,0 +1,27 @@
+# PopNow Developer MCP Server
+
+> The PopNow Developer MCP Server is a hosted Model Context Protocol server at https://api.popnow.ai/api/v1/mcp (Streamable HTTP, stateless) for developers. Coding agents (Claude Code, Cursor, Codex, VS Code, Windsurf, Cline) and your own MCP clients connect with a PopNow API key (`Authorization: Bearer sk-popnow-...`) to create images, videos, music and voiceovers, run any PopNow model by its API ID, follow tasks and install agent skills. Billing is in USD from the PopNow API balance.
+
+This repository holds the setup guide, API key configs for each client, an MCP registry manifest (server.json, io.github.popnow-ai/popnow-api-mcp) and @popnow/mcp, a stdio bridge on npm (`npx -y @popnow/mcp`) for clients that only run local servers.
+
+- Auth: API keys only, from https://popnow.ai/api/console/keys. No OAuth on this endpoint. The key's model allow-list, IP allow-list and spend caps apply.
+- Billing: every paid tool quotes first in USD (`needs_confirmation: true`, `cost_usd`, `available_usd`); call it again with `max_usd` (a decimal string) set to the approved price. There is no automatic approval threshold.
+- Developer tools: `create_task` (any model ID with the model's own `input`), `get_task`, `list_tasks`, `install_skill`. Named media tools include create_image, edit_image, create_video, create_music, create_speech, apply_effect, remove_background, upscale, compose_video; plus check_balance and list_models.
+- Typical prices: image about $0.048, 5-second video about $0.185, song about $0.072, background removal $0.0048.
+- Long jobs return a `job_id`; call `get_task` (wait_seconds 0 to 50) to collect the result.
+- The old address https://api.popnow.ai/mcp accepts API keys until 31 January 2027; @popnow/mcp 0.2.0 and newer default to the new endpoint.
+- For the ChatGPT and Claude apps with a PopNow account and website credits, use https://github.com/popnow-ai/popnow-mcp instead.
+
+## Docs
+
+- [README](https://github.com/popnow-ai/popnow-api-mcp#readme): setup per client, tools, USD quotes, limits, FAQ
+- [Developer MCP docs](https://popnow.ai/docs/mcp): official documentation with the full parameter reference
+- [Developer MCP page](https://popnow.ai/api/mcp)
+- [REST API quickstart](https://popnow.ai/docs/quickstart): the same models over HTTP
+- [llms.txt for PopNow docs](https://popnow.ai/docs/llms.txt)
+
+## Files
+
+- [examples/](https://github.com/popnow-ai/popnow-api-mcp/tree/main/examples): API key configs for Claude Desktop, Cursor, VS Code, Windsurf, Cline, Codex and generic clients
+- [server.json](https://github.com/popnow-ai/popnow-api-mcp/blob/main/server.json): MCP registry manifest
+- [packages/popnow-mcp](https://github.com/popnow-ai/popnow-api-mcp/tree/main/packages/popnow-mcp): @popnow/mcp stdio bridge (env POPNOW_API_KEY, optional POPNOW_MCP_URL)
