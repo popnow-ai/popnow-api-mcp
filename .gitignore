@@ -5,3 +5,6 @@ dist/
 .env
 .env.*
 REPO_META.json
+
+# Also exclude dependency symlinks used by local worktrees.
+node_modules
