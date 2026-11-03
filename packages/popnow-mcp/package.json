@@ -1,6 +1,6 @@
 {
   "name": "@popnow/mcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Local stdio bridge to the PopNow developer MCP server: call any AI image, video and audio model with a PopNow API key, billed in USD.",
   "mcpName": "io.github.popnow-ai/popnow-api-mcp",
   "license": "MIT",

@@ -16,7 +16,7 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 
 /** Package version, sent in the User-Agent header. Kept in sync with package.json by a test. */
-export const VERSION = "0.2.0";
+export const VERSION = "0.3.0";
 
 /** The PopNow developer MCP endpoint (API keys only, billed in USD from the API balance). */
 export const DEFAULT_URL = "https://api.popnow.ai/api/v1/mcp";
