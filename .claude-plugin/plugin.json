@@ -1,0 +1,25 @@
+{
+  "name": "popnow-api-mcp",
+  "version": "1.0.0",
+  "description": "PopNow developer MCP server for Claude Code: run any AI image, video, audio and speech model (Kling, Seedance, Wan, MiniMax, Nano Banana, GPT Image, FLUX, Suno) with your API key, see the exact USD quote before every task and pay from the prepaid API balance.",
+  "author": {
+    "name": "PopNow",
+    "email": "support@popnow.ai",
+    "url": "https://popnow.ai"
+  },
+  "homepage": "https://popnow.ai/api/mcp",
+  "repository": "https://github.com/popnow-ai/popnow-api-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "developer-tools",
+    "api",
+    "popnow",
+    "ai-video",
+    "ai-image",
+    "ai-music",
+    "text-to-speech",
+    "text-to-video",
+    "image-to-video"
+  ]
+}

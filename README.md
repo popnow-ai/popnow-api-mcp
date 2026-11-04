@@ -371,6 +371,13 @@ node packages/popnow-mcp/dist/cli.js --help
 | `405 Method Not Allowed` | `GET` or `DELETE` to the endpoint; the server is stateless | Use `POST` |
 | Cline connects but nothing works | `type` missing, so Cline used legacy SSE | Set `"type": "streamableHttp"` |
 
+## Claude Code plugin
+
+```text
+/plugin marketplace add popnow-ai/popnow-api-mcp
+/plugin install popnow-api-mcp@popnow-api-mcp
+```
+
 ## FAQ
 
 ### Does the MCP server cost extra?
