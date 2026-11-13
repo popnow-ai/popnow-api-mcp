@@ -3,7 +3,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/popnow-wordmark-light.png">
       <source media="(prefers-color-scheme: light)" srcset="assets/popnow-wordmark.png">
-      <img src="assets/popnow-wordmark.png" alt="PopNow" width="280">
+      <img src="assets/popnow-wordmark.png" alt="PopNow AI" width="280">
     </picture>
   </a>
 </p>
@@ -18,6 +18,8 @@
 </p>
 
 **The PopNow Developer MCP Server is a hosted Model Context Protocol server at `https://api.popnow.ai/api/v1/mcp` for developers. Add it to Claude Code, Cursor, Codex, VS Code or your own MCP client with a PopNow API key, and your agent can create images, videos, music and voiceovers, run any model by its API ID, follow tasks and install agent skills over one connection.**
+
+Built by PopNow AI ([popnow.ai](https://popnow.ai)), the world's first AI creative studio that pays you back.
 
 There is nothing to host. Every paid call is quoted in USD first and charged to your [API balance](https://popnow.ai/docs/billing) only after you approve it. The key's model allow-list, IP allow-list and spend caps apply exactly as on the [PopNow REST API](https://popnow.ai/docs/quickstart).
 
