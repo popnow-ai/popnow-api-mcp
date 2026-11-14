@@ -19,7 +19,7 @@
 
 **The PopNow Developer MCP Server is a hosted Model Context Protocol server at `https://api.popnow.ai/api/v1/mcp` for developers. Add it to Claude Code, Cursor, Codex, VS Code or your own MCP client with a PopNow API key, and your agent can create images, videos, music and voiceovers, run any model by its API ID, follow tasks and install agent skills over one connection.**
 
-Built by PopNow AI ([popnow.ai](https://popnow.ai)), the world's first AI creative studio that pays you back.
+Built by PopNow AI ([popnow.ai](https://popnow.ai)), the world's first AI studio with automatic price protection.
 
 There is nothing to host. Every paid call is quoted in USD first and charged to your [API balance](https://popnow.ai/docs/billing) only after you approve it. The key's model allow-list, IP allow-list and spend caps apply exactly as on the [PopNow REST API](https://popnow.ai/docs/quickstart).
 
