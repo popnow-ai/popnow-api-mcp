@@ -418,3 +418,10 @@ Model IDs and input fields come from the live PopNow catalog. This release cover
 Embedding tasks return `output.embeddings.data` (input `index` plus the numeric `embedding`) and measured `output.embeddings.inputTokens`, with no media files required. OpenAI-compatible embeddings use `POST /v1/embeddings`; binary speech uses `POST /v1/audio/speech`. The API wallet and quotes are in USD.
 
 The remote developer MCP catalog now supports `list_models` categories `chat` and `utility` in addition to media. `create_task` uses the exact model ID and model-specific input; `get_task` returns vector data in structured content. Always quote first and confirm `max_usd` before a paid task. The local package forwards the remote server tools automatically.
+
+## Support & Legal
+
+- Documentation: [popnow.ai/docs/mcp](https://popnow.ai/docs/mcp)
+- Support: [popnow.ai/contact](https://popnow.ai/contact) or support@popnow.ai
+- Privacy Policy: [popnow.ai/privacy](https://popnow.ai/privacy)
+- Terms of Service: [popnow.ai/terms](https://popnow.ai/terms)
